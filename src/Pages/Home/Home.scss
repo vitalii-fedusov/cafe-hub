@@ -1,0 +1,56 @@
+
+
+[role=navigation] {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: right;
+
+  grid-column: -1 / -3;
+}
+
+[role=navigation]>li>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include navButton;
+}
+
+.selected>a {
+  @include selectedNavButton;
+  border: none !important;
+}
+
+.previous {
+  margin-right: 8px;
+  background-image: url('../../assets/icons/arrow-left.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.previous.disabled {
+  background-image: url('../../assets/icons/arrow-left.svg');
+  @include disabledNavButton;
+}
+
+.previous.disabled>a:hover {
+  cursor: no-drop;
+}
+
+.next {
+  margin-left: 8px;
+  background-image: url('../../assets/icons/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.next.disabled {
+  background-image: url('../../assets/icons/arrow-right.svg');
+  @include disabledNavButton;
+}
+
+.next.disabled>a:hover {
+  cursor: no-drop;
+}

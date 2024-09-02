@@ -1,0 +1,106 @@
+.card-container {
+  // position: relative;
+  grid-column: span 8;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 24px;
+  // z-index: 1;
+}
+
+.slick-link {
+  display: flex;
+  gap: 8px;
+  padding-right: 16px;
+  cursor: pointer;
+  color: #000;
+
+  @include hoverScale;
+
+  &__label {
+    cursor: pointer;
+  }
+}
+
+.slick-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 2px solid $gray-30-color;
+  margin-bottom: 8px;
+}
+
+.slick-title {
+  // margin-bottom: 24px;
+  margin: 0;
+}
+
+.slick-slide > div {
+  margin: 0 8px;
+}
+
+.slick-track {
+  padding-block: 12px;
+}
+
+// .slick-prev {
+//   display: none;
+// }
+
+// .slick-next {
+//   display: none;
+// }
+
+// .slick-arrow {
+//   background: blue !important;
+//   position: absolute !important;
+//   width: 32px !important;
+//   height: 32px !important;
+//   border: 1px solid $gray-blue-color !important;
+//   transition: border-color $effect-duration $anim-timing-func;
+//   background-color: #fff !important;
+
+//   &:hover {
+//     border-color: $gray-blue-color !important;
+//   }
+// }
+
+// .slick-prev {
+//   left: auto !important;
+//   top: -48px !important;
+//   right: 48px !important;
+//   background-image: url('../../src/images/arrow-left-black.svg') !important;
+//   background-repeat: no-repeat !important;
+//   background-position: center !important;
+
+//   &::before {
+//     content: "" !important;
+//   }
+// }
+
+// .slick-next {
+//   right: 0 !important;
+//   top: -48px !important;
+//   background-image: url('../../src/images/arrow-right-black.svg') !important;
+//   background-repeat: no-repeat !important;
+//   background-position: center !important;
+
+//   &::before {
+//     content: "" !important;
+//   }
+// }
+
+// .slick-prev.slick-disabled {
+//   background-image: url('../../src/images/arrow-left.svg') !important;
+// }
+
+// .slick-next.slick-disabled {
+//   background-image: url('../../src/images/arrow-right-secondary-color.svg') !important;
+// }
+
+// .slick-disabled {
+//   &:hover {
+//     border-color: $gray-blue-color !important;
+//     cursor: no-drop;
+//   }
+// }

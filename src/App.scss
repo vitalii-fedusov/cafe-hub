@@ -1,0 +1,99 @@
+@import '/src/style-utils/vars.scss';
+@import '/src/style-utils/normalize.scss';
+@import '/src/style-utils/mixins.scss';
+
+@import '../src/Components/Header/Header.scss';
+@import '../src/Components/Footer/Footer.scss';
+@import '../src/Components/Card/Card.scss';
+@import '../src/Pages/Home/Home.scss';
+@import '../src/Components/Filters/Filters.scss';
+@import '../src/Components/SearchBar/SearchBar.scss';
+@import '../src/Pages/CafeDetails/Button.scss';
+@import '../src/Pages/CafeDetails/CafeDetail.scss';
+@import '../src/Pages/LoginPage/auth.scss';
+@import '../src/Components/CardSwiper/CardSwiper.scss';
+@import '../src/Components/CafeDescription/CafeDescription.scss';
+@import '../src/Components/CafeTestimonials/CafeTestimonials.scss';
+@import '../src/Pages/Cabinet/Cabinet.scss';
+@import '../src/Components/MyComments/MyComments.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+iframe {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  font-size: 18px;
+  max-width: $max-container-width;
+  padding: 26px 40px 32px;
+  margin: 0 auto;
+}
+
+.page {
+  &__body {
+    margin-inline: auto;
+  }
+
+  &__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__main {
+    margin-bottom: 120px;
+  }
+}
+
+.logo {
+  @include hoverScale;
+}
+
+.main {
+  @include pageGrid;
+  max-width: $max-container-width;
+
+  &__search-bar {
+    margin-bottom: 48px;
+  }
+
+  &__filters {
+    grid-column: span 2;
+    // border: 2px solid red;
+  }
+
+  &__cards {
+    grid-column: span 6;
+    // border: 2px solid green;
+
+    &-container {
+      grid-column: span 6;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: $grid-col-gap;
+      margin-bottom: 32px;
+    }
+
+    &-cabinet-container {
+      grid-column: span 8;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: $grid-col-gap;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__cafe {
+    margin-bottom: 24px;
+  }
+
+  &__cafe-info {
+    margin-bottom: 32px;
+  }
+}

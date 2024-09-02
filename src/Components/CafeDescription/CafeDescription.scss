@@ -1,0 +1,97 @@
+.cafe-info {
+  box-shadow: $box-shadow-value;
+  border-radius: $border-radius;
+  padding: 12px;
+
+  &__description-section {
+    padding: 24px 20% 4px 20px;
+    text-align: justify;
+  }
+
+  &__tabs {
+  }
+
+  &__tab {
+    border-bottom: 2px solid $gray-30-color;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: $gray-60-color;
+    font-size: 18px;
+
+    &--active {
+      color: $green-color;
+      border-bottom: 2px solid $green-color;
+    }
+  }
+
+  &__photo-section {
+    @include pageGrid;
+    width: 100%;
+
+    padding: 24px 10px 10px 10px;
+  }
+
+  &__image {
+    grid-column: span 2;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: $border-radius;
+
+    @include hoverScale;
+  }
+
+  &__testimonials-section {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 15% 20px 15%;
+  }
+}
+
+.cafe-section {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: $paragraph-color;
+
+  &__article {
+    margin-bottom: 24px;
+  }
+}
+
+.cafe-features {
+  display: flex;
+}
+
+.cafe-feature {
+  &__title {
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  &--features {
+    flex: 1 1 auto;
+  }
+
+  &--occasion {
+    flex: 1 1 auto;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

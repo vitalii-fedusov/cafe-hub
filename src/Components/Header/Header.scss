@@ -1,0 +1,68 @@
+.header {
+  &__top-bar {
+    margin-bottom: 32px;
+  }
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__items {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    font-weight: bold;
+  }
+
+  &__button {
+    font-size: 18px;
+    width: 152px;
+    height: $button-height;
+    border-radius: $border-radius;
+    cursor: pointer;
+    border: 2px solid $brown-color;
+    background-color: white;
+    color: $brown-color;
+    font-size: 24px;
+    font-weight: bold;
+
+    @include hover(border-color, $hover-brown-border);
+    @include hover(color, $hover-brown-text);
+
+    @include active(border-color, $brown-color);
+    @include active(color, $brown-color);
+
+    @include focus(background-color, $focused-bg-button);
+  }
+}
+
+.auth-modal {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  gap: 8px;
+
+  &__button {
+    width: 100%;
+    min-height: 56px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 120%;
+  }
+}

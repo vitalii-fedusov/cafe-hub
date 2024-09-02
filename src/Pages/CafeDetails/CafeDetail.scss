@@ -1,0 +1,100 @@
+.button-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  grid-column: span 8;
+}
+
+.cafe {
+  // width: 100px;
+  @include pageGrid;
+  grid-column: span 8;
+
+  &__name {
+    font-weight: 700;
+    font-size: 28px;
+    color: $name-color;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+
+    &--tel {
+      display: flex;
+    }
+  }
+
+  &__menu {
+    height: 54px;
+  }
+
+  &__rating {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    .MuiBox-root {
+      width: min-content;
+    }
+  }
+
+  &__paragraph {
+    color: $paragraph-color;
+    font-size: 16px;
+
+    &--address {
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &--address-show {
+      color: $gray-80-color;
+      font-weight: 600;
+    }
+  }
+
+  &__main-link {
+    grid-column: span 2;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: $border-radius;
+  }
+
+  &__list {
+    grid-column: span 4;
+  }
+
+  &__link {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__paragraph {
+    margin: 0;
+    &--address {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-column: span 2;
+  }
+
+  &__button-wrap {
+    margin-bottom: 16px;
+  }
+}

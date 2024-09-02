@@ -1,0 +1,55 @@
+.testimonials {
+  display: flex;
+  gap: 16px;
+
+  &__button {
+    height: 54px;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.comment {
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
+
+  &__image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item {
+  }
+
+  &__data {
+    margin: 0;
+    font-size: 12px;
+    line-height: 120%;
+    color: $gray-60-color;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    color: $name-secondary-color;
+  }
+
+  &__text {
+    margin: 0;
+    text-align: justify;
+  }
+}

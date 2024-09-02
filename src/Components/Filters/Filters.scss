@@ -1,0 +1,23 @@
+.filters {
+  &__title {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  label {
+    display: block;
+    margin: 0;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .MuiAccordionDetails-root {
+    padding: 8px;
+  }
+  
+  .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+    margin: 10px 0;
+  }
+}

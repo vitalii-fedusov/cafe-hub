@@ -1,0 +1,45 @@
+$footer-height: 322px;
+$grid-col-gap: 20px;
+$border-radius: 16px;
+$max-container-width: 1200px;
+$button-height: 56px;
+
+$button-width: 44px;
+
+$grid-col-amount: 8;
+
+$col-width: calc(($max-container-width - ($grid-col-amount - 1) * $grid-col-gap) / 8);
+
+// $secondary-text: #343a40;
+
+$brown-color: #4c3330;
+$green-color: #348c1b;
+$gray-text-color: #212529;
+$gray-blue-color: #343a40;
+$gray-80-color: #868e96;
+$gray-60-color: #adb5bd;
+$gray-30-color: #ced4da;
+$gray-20-color: #e9ecef;
+$gray-10-color: #f8f9fa;
+
+$error-color: #ff5e55;
+$info-color: #8f8cff;
+$warning-color: #ffe169;
+$success-color: #5fde7f;
+
+$hover-brown-border: #9b8482;
+$hover-brown-text: #a3705f;
+$focused-bg-button: #f5eeeb;
+
+$green-hover: #3fa622;
+$green-active: #2d8314;
+
+$name-color: #38393a;
+$paragraph-color: #1d1d1d;
+$name-secondary-color: #3e3e3e;
+
+$effect-duration: 0.3s;
+$anim-timing-func: ease;
+$scale-value: 1.03;
+
+$box-shadow-value: 0 2px 4px 0 rgba(78, 78, 78, 0.2);
